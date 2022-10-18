@@ -135,7 +135,7 @@ function esImpar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   var division = (num % 2) 
-  if (division =! 0){
+  if (division !== 0){
     return true;
   } else {
     return false;
