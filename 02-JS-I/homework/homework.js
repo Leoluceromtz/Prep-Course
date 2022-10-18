@@ -105,7 +105,7 @@ function mayorQueCincuenta(num) {
   if (num > 50) {
     return true;
     } else {
-      return false
+      return false;
     }
 }
 
@@ -113,7 +113,7 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  return( x % y)
+  return( x % y);
 }
 
 function esPar(num) {
@@ -241,7 +241,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  return (euro * 1.20)
+  return (euro * 1.20);
 }
 
 
@@ -253,19 +253,19 @@ function esVocal(letra){
   //Escribe tu código aquí
   
   if (letra == ("a")){
-    return "Es vocal" 
+    return "Es vocal";
   } else if (letra == ("e")){
-    return "Es vocal"
+    return "Es vocal";
   } else if (letra == ("i")){
-    return "Es vocal"
+    return "Es vocal";
   } else if (letra == ("o")){
-    return "Es vocal"
+    return "Es vocal";
   } else if (letra == ("u")){
-    return "Es vocal"
+    return "Es vocal";
   } else if (letra.length > 1) {
-    return "Dato incorrecto"
+    return "Dato incorrecto";
   } else {
-    return "Dato incorrecto"
+    return "Dato incorrecto";
   }
   }
 
