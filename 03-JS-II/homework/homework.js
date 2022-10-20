@@ -185,7 +185,7 @@ function esVerdadero(valor) {
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
   if (valor === true) {
-    return "Soy Verdadero";
+    return "Soy verdadero";
   }
   if (valor === false) {
     return "Soy falso";
@@ -208,7 +208,8 @@ function tieneTresDigitos(numero) {
   //Escribe tu código aquí
   if (numero > 99) {
     return true;
-  } else {
+  }
+  if (numero < 999) {
     return false;
   }
 }
