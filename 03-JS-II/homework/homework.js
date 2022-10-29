@@ -220,9 +220,9 @@ function doWhile(numero) {
 
   let i = 0;
   do {
-    console.log(numero + i);
     i += 5;
-  } while (i !== 45);
+    console.log(numero + i);
+  } while (i !== 40);
 }
 
 // No modificar nada debajo de esta línea
