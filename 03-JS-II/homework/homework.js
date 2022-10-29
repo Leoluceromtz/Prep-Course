@@ -221,10 +221,11 @@ function doWhile(numero) {
   let i = 0;
   do {
     i += 5;
-    console.log(numero + i);
   } while (i !== 40);
+  {
+    return numero + i;
+  }
 }
-
 // No modificar nada debajo de esta línea
 // --------------------------------
 
