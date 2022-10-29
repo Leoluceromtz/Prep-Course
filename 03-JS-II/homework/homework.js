@@ -222,7 +222,7 @@ function doWhile(numero) {
   do {
     console.log(numero + i);
     i += 5;
-  } while (i !== 40);
+  } while (i !== 45);
 }
 
 // No modificar nada debajo de esta línea
