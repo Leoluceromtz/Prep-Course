@@ -177,12 +177,13 @@ function mesesDelAño(array) {
   // Tu código:
   let newArray = [];
   for (i = 0; i < array.length; i++) {
-    if (array.includes("Enero" && "Marzo" && "Noviembre")) {
+    if (array[i] === "Enero" || "Marzo" || "Noviembre") {
       newArray.push(array[i]);
-      if (!array.includes("Enero" || "Marzo" || "Noviembre"))
-        return "No se encontraron los meses pedidos";
+      return newArray;
+    } else {
+      return "No se encontraron los meses pedidos";
     }
-    return newArray;
+    // if (!array.includes("Enero" || "Marzo" || "Noviembre"))
   }
 }
 
@@ -196,7 +197,7 @@ function mayorACien(array) {
       newArray.push(array[i]);
     }
   }
-  return nuevoArray;
+  return newArray;
 }
 
 function breakStatement(numero) {
