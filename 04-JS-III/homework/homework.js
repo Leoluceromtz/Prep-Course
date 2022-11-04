@@ -160,13 +160,12 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí
-  resultado = 0;
+
   for (let i = 0; i < arreglo.length; i++) {
-    if (arreglo[0] === arreglo[i]) {
+    let iguales = (currentValue) => currentValue === arreglo[0];
+    if (arreglo.every(iguales)) {
       return true;
-    } else {
-      return false;
-    }
+    } else return false;
   }
 }
 
@@ -177,13 +176,17 @@ function mesesDelAño(array) {
   // Tu código:
   let newArray = [];
   for (i = 0; i < array.length; i++) {
-    if (array[i] === "Enero" || "Marzo" || "Noviembre") {
+    if (
+      array[i] === "Enero" ||
+      array[i] === "Marzo" ||
+      array[i] === "Noviembre"
+    )
       newArray.push(array[i]);
-      return newArray;
-    } else {
-      return "No se encontraron los meses pedidos";
-    }
-    // if (!array.includes("Enero" || "Marzo" || "Noviembre"))
+  }
+  if (newArray.length < 3) {
+    return "No se encontraron los meses pedidos";
+  } else {
+    return newArray;
   }
 }
 
@@ -208,16 +211,20 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
-  let array = [];
-  for (let aumento = 0; aumento < 10; aumento++) {
-    for (let i = 0; (aumento = 10); i + 2) {
-      array.push(numero + i);
-      if (aumento === numero + i) {
-        return "Se interrumpió la ejecucion";
-      }
+  var newArray = [];
+  var suma = numero;
+  for (var i = 0; i < 10; i++) {
+    suma = suma + 2;
+    if (i === suma) {
       break;
+    } else {
+      newArray.push(suma);
     }
-    return array;
+  }
+  if (i < 10) {
+    return "Se interrumpió la ejecución";
+  } else {
+    return newArray;
   }
 }
 
@@ -229,13 +236,13 @@ function continueStatement(numero) {
   //Pista: usá el statement 'continue'
   // Tu código:
   let array = [];
-  for (let aumento = 0; aumento < 11; aumento++) {
-    for (let i = 0; (aumento = 10); i + 2) {
-      array.push(numero + i);
-      if (aumento === 5) {
-        continue;
-      }
-      break;
+  let suma = numero;
+  for (let i = 0; i < 10; i++) {
+    if (i === 5) {
+      continue;
+    } else {
+      suma += 2;
+      array.push(suma);
     }
   }
   return array;
