@@ -99,7 +99,7 @@ function multiplicarArgumentos() {
   // Escribe tu código aquí:
   if (arguments.length < 1) return 0;
   let multiplicacion = 1;
-  for (var i = 0; i < arguments.length; i++) {
+  for (let i = 0; i < arguments.length; i++) {
     multiplicacion = multiplicacion * arguments[i];
   }
   return multiplicacion;
