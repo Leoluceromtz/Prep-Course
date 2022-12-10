@@ -1,0 +1,86 @@
+* {
+  font-family: Roboto;
+  background-color: #0d1316;
+  color: #ffffff;
+}
+
+body {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.presentacion {
+  margin: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentacion img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  box-shadow: inset;
+}
+
+.presentacion h1 {
+  font-size: 60px;
+  width: 500px;
+  padding-right: 100px;
+  border: 1px;
+}
+
+.presentacion .titulos .CV {
+  color: #c4220c;
+  margin-top: -50px;
+}
+
+.seccion1 {
+  width: 30%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.seccion1 h2 {
+  color: #c4220c;
+  font-size: 30px;
+  text-align: center;
+}
+
+.seccion1 p {
+  font-size: 20px;
+}
+
+.seccionesjuntas1 {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.seccionesjuntas2 {
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.seccion {
+  width: 30%;
+  margin: auto;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.seccion h2 {
+  color: #c4220c;
+}
+
+.seccion ul {
+  list-style-type: none;
+  text-align: justify;
+}
